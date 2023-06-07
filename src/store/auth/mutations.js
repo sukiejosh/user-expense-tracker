@@ -1,0 +1,6 @@
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
+export const LOGIN_REQUEST = 'LOGIN_REQUEST';
+export const LOGIN_RESULT = 'LOGIN_RESULT';
+export const SET_PREFERENCES = 'SET_PREFERENCES';
+export const UPDATE_PREFERENCES = 'UPDATE_PREFERENCES';

@@ -1,0 +1,125 @@
+.circle_nav__wrapper {
+    background: #ffffff;
+    position: relative;
+}
+.circle_nav__toggle {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    right: -4rem;
+    bottom: -4rem;
+    height: 8rem;
+    width: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 -4px 8px 0, rgba(0, 0, 0, 0.08) 0 -2px 4px 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.circle_nav__toggle.open {
+    background-color: #21264b;
+    right: -5rem;
+    bottom: -5rem;
+    height: 10rem;
+    width: 10rem;
+}
+.circle_nav__toggle.open svg {
+    fill: #ffffff;
+    height: 2rem;
+    width: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+}
+.circle_nav__toggle svg {
+    fill: #21264b;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-right: 3.25rem;
+    padding-bottom: 3.25rem;
+    box-sizing: content-box;
+    transition: all 0.3s ease;
+}
+.circle_nav__toggle:focus, .circle_nav__toggle:active, .circle_nav__toggle:hover {
+    outline: none;
+    border: 0;
+}
+.circle_nav__links {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    bottom: -10rem;
+    right: -10rem;
+    border: 0;
+    border-radius: 50%;
+    transform: scale(0.1);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 -4px 8px 0, rgba(0, 0, 0, 0.08) 0 -2px 4px 0;
+}
+.circle_nav__links.open {
+    border-radius: 50%;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.circle_nav__links-element {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    transition: all 0.2s ease;
+}
+.circle_nav__links-element:first-child {
+    transform: rotate(0deg) skew(60deg);
+}
+.circle_nav__links-element:nth-child(2) {
+    transform: rotate(30deg) skew(60deg);
+}
+.circle_nav__links-element:nth-child(3) {
+    transform: rotate(60deg) skew(60deg);
+}
+.circle_nav__links-element.active a {
+    background-color: rgba(238, 27, 89, 0.85);
+}
+.circle_nav__links-element.active a svg {
+    fill: #ffffff;
+}
+.circle_nav__links-element a {
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    bottom: -4rem;
+    right: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    padding-top: 3rem;
+    padding-left: 4.5rem;
+    transform: skew(-60deg) rotate(-72deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    transition: all 0.2s ease;
+}
+.circle_nav__links-element a:hover {
+    background-color: #ee1b59;
+}
+.circle_nav__links-element a:hover svg {
+    fill: #ffffff;
+}
+.circle_nav__links-element a svg {
+    fill: #21264b;
+    height: 2.25rem;
+    width: 2.25rem;
+    padding-right: 3.25rem;
+    padding-bottom: 3.25rem;
+    box-sizing: content-box;
+    transition: all 0.2s ease;
+}

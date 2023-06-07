@@ -1,0 +1,60 @@
+{
+  "indexes": [
+    {
+      "collectionId": "accounts",
+      "fields": [
+        {
+          "fieldPath": "uid",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "mode": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionId": "categories",
+      "fields": [
+        {
+          "fieldPath": "uid",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "mode": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionId": "descriptions",
+      "fields": [
+        {
+          "fieldPath": "uid",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "content",
+          "mode": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionId": "entries",
+      "fields": [
+        {
+          "fieldPath": "accountId",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "mode": "ASCENDING"
+        },
+        {
+          "fieldPath": "enteredAt",
+          "mode": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
